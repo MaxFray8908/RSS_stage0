@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#">
+                <svg class="icon">
+                  <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+              
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                </ul>   
+            </nav> 
+
+            <p class = "switch-lng"><span class="switch_en">en</span><span class="slesch"> / </span> ru</p>
+            
+        </div>
+    </header>
+
+    <main class = "main">   
+        <div class="container">
+            <section class="section hero">
+                <div class = "about_me">
+                    <h1 class="h1-title">Alexa Rise</h1>
+                    <p>Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                    <button class="button gold">Hire me</button>
+                </div>
+            </section> 
+            <section class="section skills" id="skills">
+                <div class = "wrap-section-title">
+                    <h2 class="section-title" >Skills</h2>
+                </div>
+                <div class = "skills-items">
+                    <div class = "skill-item">
+                        <h3 class = "title-skill">Digital photography</h3>
+                        <p>High-quality photos in the studio and on the nature</p>
+                    </div>
+                    <div class = "skill-item">
+                        <h3 class = "title-skill">Video shooting</h3>
+                        <p>Capture your moments so that they always stay with you</p>
+                    </div>
+                    <div class = "skill-item">
+                        <h3 class = "title-skill">Retouch</h3>
+                        <p>I strive to make photography surpass reality</p>
+                    </div>
+                    <div class = "skill-item">
+                        <h3 class = "title-skill">Audio</h3>
+                        <p>Professional sounds recording for video, advertising, portfolio</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section portfolio" id="portfolio">
+                <div class = "wrap-section-title">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
+                <div class = "wrap-button">
+                    <button class="button transparent">Winter</button>
+                    <button class="button transparent">Spring</button>
+                    <button class="button transparent">Summer</button>
+                    <button class="button gold">Autumn</button>
+                </div>
+                <div class = "wrap-img">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-1.jpg" alt="portfolio-1">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-2.jpg" alt="portfolio-2">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-3.jpg" alt="portfolio-3">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-4.jpg" alt="portfolio-4">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-5.jpg" alt="portfolio-5">
+                    <img class = "portfolio_img" src="assets/img/portfolio-img-6.jpg" alt="portfolio-6">
+                </div>
+            </section>
+            <section class="section video" id="video">
+                <div class = "wrap-section-title">
+                    <h2 class="section-title">Video</h2>
+                </div>
+                <div class = video-player>
+                    <button class = "play"><svg class="icon play">
+                        <use xlink:href="./assets/svg/sprite.svg#Play_hover"></use>
+                      </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="section price" id="price">
+                <div class = "wrap-section-title">
+                    <h2 class="section-title">Price</h2>
+                </div>
+                <div class = "wrap-price">
+                    <div class = "card-price">
+                        <h3 class = "title-price">Standard</h3>
+                        <p class = "block-price">500 $</p>
+                        <div class = "frame">
+                            <span class = "descrip-price">One location</span>
+                            <span class = "descrip-price">120 photos in color</span>
+                            <span class = "descrip-price">12 photos in retouch</span>
+                            <span class = "descrip-price">Readiness 2-3 weeks</span>
+                            <span class = "descrip-price">Make up, visage</span>
+                        </div>
+                        <button class="button gold">Order shooting</button>
+                    </div>
+                    <div class = "card-price">
+                        <h3 class = "title-price">Premium</h3>
+                        <p class = "block-price">700 $</p>
+                        <div class = "frame">
+                            <span class = "descrip-price">One or two locations</span>
+                            <span class = "descrip-price">200 photos in color</span>
+                            <span class = "descrip-price">20 photos in retouch</span>
+                            <span class = "descrip-price">Readiness 1-2 weeks</span>
+                            <span class = "descrip-price">Make up, visage</span>
+                        </div>
+                        <button class="button gold">Order shooting</button>
+                    </div>
+                    <div class = "card-price">
+                        <h3 class = "title-price">Gold</h3>
+                        <p class = "block-price">1000 $</p>
+                        <div class = "frame">
+                            <span class = "descrip-price">Three locations or more</span>
+                            <span class = "descrip-price">300 photos in color</span>
+                            <span class = "descrip-price">50 photos in retouch</span>
+                            <span class = "descrip-price">Readiness 1 week</span>
+                            <span class = "descrip-price">Make up, visage, hairstyle</span>
+                        </div>
+                        <button class="button gold">Order shooting</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section contacts" id="contacts">
+                <div class = "container_form">
+                    <h2 class="section-title_contact">Contact me</h2>
+                    <form action="#">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <input type="tel" name="tel" placeholder="Phone">
+                        <textarea rows="10" cols="45" name="text" placeholder="Message" ></textarea>
+                        <button class="button gold">Send message</button>
+                    </form>
+                </div>
+            </section>  
+        </div>  
+    </main>
+    <footer class = "footer">
+        <div class="container">
+            <p class="footer_data">&copy; <span>2022</span> <a href="https://github.com/MaxFray8908" class="nav-link">github</a></p>
+            <a href="https://rs.school/js-stage0/" class="nav-link RSS">Rolling Scopes School</a>
+            <ul class="contact_icons">
+                <li><a href="#">
+                    <svg class="icon social">
+                      <use xlink:href="./assets/svg/sprite.svg#inst"></use>
+                    </svg>
+                </a>
+                </li>
+                <li><a href="#">
+                    <svg class="icon social">
+                      <use xlink:href="./assets/svg/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+                </li>
+                <li><a href="#">
+                    <svg class="icon social">
+                      <use xlink:href="./assets/svg/sprite.svg#tw"></use>
+                    </svg>
+                </a>
+                </li>
+                <li><a href="#">
+                    <svg class="icon social">
+                      <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+                    </svg>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

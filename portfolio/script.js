@@ -1,1 +1,20 @@
-console.log('1. Вёрстка валидная 10/10 \n 2. Вёрстка семантическая 20/20 \n 3. Вёрстка соответствует макету 48/48 \n 4. Требования к css 12/12 \n 5. Интерактивность, реализуемая через css 20/20 \n Итого 100/100')
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+function toggleMenu() {
+  hamburger.classList.toggle('open');
+  nav.classList.toggle('open');
+}
+
+function closeMenu(event) {
+  if (event.target.classList.contains('nav-link')) {
+    hamburger.classList.remove('open');
+    nav.classList.toggle('open');
+  }
+}
+
+hamburger.addEventListener('click', toggleMenu);
+nav.addEventListener('click', closeMenu);
+
+
+console.log('1. Вёрстка соответствует макету 47/48 \n2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется 15/15 \n3. На ширине экрана 768рх и меньше реализовано адаптивное меню 22/22 \nИтого 75/75')

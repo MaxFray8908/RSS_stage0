@@ -58,6 +58,7 @@ body{
   cursor: pointer;
   font-family: inherit;
   font-size: var(--font3);
+  position: relative;
 }
 
 .button.gold{
@@ -70,12 +71,19 @@ body{
   color: var(--color-white);
 }
 
-.button.transparent{
+.transparent{
   background-color: transparent;
   border: 2px solid var(--color-gold);
   color: var(--color-gold);
   transition: color 0.5s;
 }
+
+.portfolio-btn.active{
+  background-color: var(--color-gold);
+  color:var(--color-black);
+  transition: color 0.5s;
+}
+
 
 /* title h2 */
 .section-title,
@@ -125,6 +133,11 @@ a:hover {
 }
   
 
+.hamburger.open .line1.light-theme,
+.hamburger.open .line2.light-theme,
+.hamburger.open .line3.light-theme {
+  background: var(--color-black);
+}
 /* header */
 .header > .container {
     background: url('./assets/img/header-bg.jpg');
@@ -149,7 +162,12 @@ a:hover {
 
 nav { 
   margin-left: auto;
+
 } 
+
+nav.light-theme {
+  background-color: transparent;
+}
 
 .nav-list {
   display: flex;
@@ -167,14 +185,71 @@ nav {
   color: var(--color-white);
 } 
 
-.switch-lng{
-  box-sizing: border-box;
-  line-height: 50px;
-  padding: 20px 18px 0 16px;
-  margin: 0;
-  font-weight: 700;
+.nav-link.light-theme { 
+  background-color: transparent;
+  color: var(--color-white);
 }
 
+.switch-lngs{
+  box-sizing: border-box;
+  padding: 20px 18px 0 16px;
+  margin: 0;
+}
+
+.switch-lng {
+  font-weight: 500;
+  line-height: 50px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: var(--font3);
+  color: var(--color-white);
+  transition: color 0.5s;
+}
+
+.switch-lng:hover { 
+  color: var(--color-gold);
+}
+
+.switch-lng.active {
+color: var(--color-gold);
+}
+
+.wrap-button-theme {
+  padding-top: 25px;
+}
+
+.button_theme {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.icon_theme{
+  width: 39.38px;
+  height: 39.38px;
+  padding: 0;
+}
+
+.moon {
+  display: none;
+}
+
+.sun.change {
+  display: none;
+}
+
+.sun {
+  display: block;
+}
+
+.moon.change {
+  display: block;
+}
+
+<<<<<<< HEAD
 .switch_en {
   color: var(--color-gold);
   padding-right: 6px;
@@ -182,6 +257,65 @@ nav {
 
 .slesch{
   padding-right: 6px;
+=======
+@media (min-width: 320px) and (max-width: 768px) {
+  .switch-lng { 
+    margin-left: auto;
+  } 
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+
+  nav{ 
+    background-color: #000000;
+    right: -620px;
+    position: absolute;
+    width: 620px;
+    height: 100vh;
+    transition: 0.5s;
+  } 
+  
+  nav.light-theme {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  nav.open {
+    display: flex;
+    right: 0;
+    z-index: 4;
+    transition: 0.5s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 134px 0 0 20.4%;
+    margin: 0;
+    gap: 16px;
+  }
+
+  .nav-link { 
+    padding: 0;
+    font-size: 34.82px;
+    line-height: 72.55px;
+  } 
+
+  .nav-link.light-theme { 
+    color: var(--color-black);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  nav{ 
+    width: 100vw;
+  } 
+  
+>>>>>>> 0039047... feat: add change themes
 }
 
 /* hero */
@@ -442,5 +576,78 @@ textarea{
 }
 
 .RSS{
+  padding: 50px 15px;
+  line-height: 50px;
+  text-decoration: none;
+  color: var(--color-white);
   padding-left: 60px;
 }
+<<<<<<< HEAD
+=======
+
+.github{
+  padding: 0 15px;
+  line-height: 50px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer > .container {
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+  }
+
+  .github,
+  .RSS {
+    font-size: var(--font3);
+    padding: 0 15px;
+    line-height: 50px;
+  }
+
+  .contact_icons {
+    padding: 0;
+    margin-top: 15px;
+  } 
+    
+  .contact_icons > li{
+    padding: 0 10px;
+  }
+  
+  .footer_data,
+  .RSS{
+    padding: 0;
+  }
+  
+  .footer_data {
+    padding-left: 8px;
+  }
+
+  .footer_data > span{
+    padding-left:  15px;
+  }
+
+  .RSS{
+    padding-left: 0;
+    margin-top: -10px;
+  }
+}
+
+.light-theme {
+  background-color: #fff;
+  color: var(--color-black);
+}
+
+
+.section-title.light-theme:before,
+.section-title.light-theme:after{
+  background-color: var(--color-black);
+}
+
+.button.transparent.light-theme:hover {
+  background-color: var(--color-gold);
+  transition: color 0.5s;
+}
+>>>>>>> 0039047... feat: add change themes

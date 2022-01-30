@@ -190,6 +190,10 @@ nav.light-theme {
   color: var(--color-white);
 }
 
+.nav-link.light-theme:hover {
+  color: var(--color-gold);
+}
+
 .switch-lngs{
   box-sizing: border-box;
   padding: 20px 18px 0 16px;

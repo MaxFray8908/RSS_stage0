@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ecosounds</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class = "hamburger">
+            <div class = "line line1"></div>
+            <div class = "line line2"></div>
+            <div class = "line line3"></div>
+        </div>
+
+        <div class="container-nav">
+            <a href="#">
+                <svg class="icon icon-logo">
+                    <use class="icon-button" xlink:href="./assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item" data-bird="solovey">Соловей</li>
+                    <li class="nav-item" data-bird="drozd">Дрозд</li>
+                    <li class="nav-item" data-bird="zarynka">Малиновка</li>
+                    <li class="nav-item" data-bird="javoronok">Жаворонок</li>
+                    <li class="nav-item" data-bird="slavka">Славка</li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="main">
+        <button class="button-audio">
+            <svg class="icon icon-audio">
+                <use class="icon-play" xlink:href="./assets/svg/sprite.svg#play"></use>
+            </svg>
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-data">
+            <p>&copy</p>
+            <p>2022</p>
+            <a href="https://github.com/MaxFray8908" class="link">github</a>
+        </div>
+
+        <div class="RSS">
+            <a href="https://rs.school/js-stage0/">
+                <svg class="icon icon-RSS">
+                    <use xlink:href="./assets/svg/sprite.svg#rss"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

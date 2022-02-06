@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url("assets/fonts/Comfortaa-VariableFont_wght.ttf");
+  }
+
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-yellowgreen: #9acd32;
+    --font1: 25px;
+    --font2: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: var(--color-yellowgreen);
+}
+
+.icon {
+    fill: var(--color-white);
+    transition: fill 0.3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    fill: var(--color-yellowgreen);
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Comfortaa;
+    font-size: var(--font2);
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-black);
+}
+
+/* header */
+.header {
+    position: absolute;
+    display: flex;
+    right: -250px;
+    width: 300px;
+    height: calc(100vh - 70px);
+    transition: 0.3s;
+}
+
+.open {
+    right: 0px;
+}
+
+.icon-logo {
+    width: 50px;
+    height: 50px;
+    padding: 20px 40px 0;
+}
+
+/* hamburger*/
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    padding-top: 20px;
+}
+  
+.line {
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    margin: 4px 0;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+  
+.hamburger.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 10px);
+}
+  
+.hamburger.open .line2 {
+    opacity: 0;
+}
+  
+.hamburger.open .line3 {
+    transform: rotate(45deg) translate(-5px, -10px);
+}
+
+/* container-nav */
+.container-nav {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--color-white);
+    font-size: var(--font1);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+} 
+
+.nav-item {
+    padding: 10px 0 10px 40px;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.choice {
+    background-color: var(--color-yellowgreen);
+    color: var(--color-black);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: var(--color-yellowgreen);
+    color: var(--color-black);
+}
+
+/* main */
+.main {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/solovey.jpg);
+    background-size: cover    ;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.button-audio {
+    border: 0;
+    background-color: transparent;
+}
+
+.icon-audio {
+    width: 70px;
+    height: 70px;
+}
+
+/* footer */
+.footer {
+    flex: 0 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0;
+    color:var(--color-white);
+}
+
+.footer-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+
+.icon-RSS {
+    width: 125px;
+    height: 50px;
+}

@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    
+    <main class="main">
+        <section class="data">
+            <header class="header">
+                <h1 class="title-game">TIC-TAC-TOE</h1>
+            </header>
+            <div class="opponent">
+                <h2 class="title-settings">CHOOSE YOUR OPPONENT</h2>
+                <button class="button button-opponent  selected">human</button>
+                <button class="button button-opponent button-opponent-computer">computer</button>
+            </div>
+            <div class="wrap-record">
+                <h2 class="title-record">LAST 10</h2>
+            </div>
+        </section>
+
+        <div class="wrap-notification">
+            <div class="notification">
+                <button class="button button-new-game">new game</button>
+            </div>
+        </div>
+
+        <section class="game">
+            <div class="field-game">
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+                <div class="cell free"></div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer-data">
+            <p>&copy</p>
+            <p>2022</p>
+            <a href="https://github.com/MaxFray8908" class="link">github</a>
+        </div>
+
+        <div class="RSS">
+            <a href="https://rs.school/js-stage0/">
+                <svg class="icon-RSS">
+                    <use xlink:href="./assets/svg/sprite.svg#rss"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

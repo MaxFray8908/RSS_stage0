@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'LetoTextSansDefect';
+    src: url("assets/fonts/LetoTextSansDefect.otf");
+}
+
+:root {
+    --color-beige: #e3e2de;
+    --color-blue: #0a3198;
+    --color-fon: #e0cfc5;
+    --color-white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.button {
+    height: 50px;
+    width: 110px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 3px solid var(--color-blue);
+    font-family: 'LetoTextSansDefect';
+    font-size: 18px;
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--color-fon);
+    color: var(--color-white);
+}
+
+.selected {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'LetoTextSansDefect';
+    color: var(--color-blue);
+    background-color: var(--color-blue);
+}
+
+.main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-width: 930px;
+}
+
+.data {
+    position: absolute;
+    left: 100px;
+    height: 100%;
+    width: 450px;
+}
+
+.title-game {
+    font-weight: 400;
+    font-size: 73px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 1500px;
+    background-color: var(--color-beige);
+    
+}
+
+.field-game {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    background-color: var(--color-beige);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid var(--color-blue);
+    cursor: pointer;
+}
+
+@keyframes draw{
+    100% {stroke-dashoffset: 0;}
+}
+
+.circle {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 1s linear forwards;
+}
+
+.cross {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw 2s linear forwards;
+}
+
+.circle,
+.cross {
+    stroke: var(--color-blue);
+    fill: none;
+}
+
+#line-2 {
+    animation-delay: 0.5s;
+}  
+
+.wrap-notification {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e0cfc593;
+}
+
+.game-over {
+    display: flex;
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    background-color: var(--color-beige);
+}
+
+.wrap-record {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+.string-record {
+    font-size: 20px;
+}
+
+.button-new-game {
+    padding: 0;
+}
+
+.p {
+    font-size: 20px;
+}
+
+/* footer */
+.footer {
+    flex: 0 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.footer-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+
+.icon-RSS {
+    fill: var(--color-white);
+    width: 125px;
+    height: 50px;
+    transition: fill 0.3s;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icon-RSS:hover,
+.link:hover {
+    fill: var(--color-fon);
+    color:  var(--color-fon);
+}
